@@ -8,7 +8,10 @@
         "dev:mock": "cross-env PET_MOCK=mock npm run dev",
         "format": "prettier \"src/**/*.{js,html,css}\" --write",
         "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "jest",
+        "test:update": "jest -u",
+        "test:watch": "jest --watch",
+        "test:coverage": "jest --coverage"
     },
     "keywords": [],
     "author": "",
@@ -18,6 +21,7 @@
         "@babel/plugin-proposal-class-properties": "^7.12.1",
         "@babel/preset-env": "^7.12.11",
         "@babel/preset-react": "^7.12.10",
+        "@testing-library/react": "^11.2.2",
         "babel-eslint": "^10.1.0",
         "cross-env": "^7.0.3",
         "eslint": "^7.16.0",
@@ -26,6 +30,7 @@
         "eslint-plugin-jsx-a11y": "^6.4.1",
         "eslint-plugin-react": "^7.21.5",
         "eslint-plugin-react-hooks": "^4.2.0",
+        "jest": "^26.6.3",
         "parcel-bundler": "^1.12.4",
         "prettier": "^2.2.1"
     },
@@ -33,7 +38,9 @@
         "@frontendmasters/pet": "^1.0.3",
         "@reach/router": "^1.3.4",
         "react": "^17.0.1",
-        "react-dom": "^17.0.1"
+        "react-dom": "^17.0.1",
+        "react-redux": "^7.2.2",
+        "redux": "^4.0.5"
     },
     "browserslist": [
         "last 2 Chrome versions"

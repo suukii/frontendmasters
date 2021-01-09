@@ -8,6 +8,7 @@ const useDropdwon = (label, defaultState, options) => {
     <label htmlFor={id}>
       {label}
       <select
+        data-testid={id}
         id={id}
         value={state}
         onChange={(e) => setState(e.target.value)}
